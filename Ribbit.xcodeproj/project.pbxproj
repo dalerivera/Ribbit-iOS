@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E26D90D198A127E00A2806B /* GravatarUrlBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E26D90C198A127E00A2806B /* GravatarUrlBuilder.m */; };
+		5E9B20BF197F023F00D893C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9B20BE197F023F00D893C5 /* Foundation.framework */; };
+		5E9B20C1197F023F00D893C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9B20C0197F023F00D893C5 /* CoreGraphics.framework */; };
+		5E9B20C3197F023F00D893C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9B20C2197F023F00D893C5 /* UIKit.framework */; };
+		5E9B20C9197F023F00D893C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E9B20C7197F023F00D893C5 /* InfoPlist.strings */; };
+		5E9B20CB197F023F00D893C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B20CA197F023F00D893C5 /* main.m */; };
+		5E9B20CF197F023F00D893C5 /* DRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B20CE197F023F00D893C5 /* DRAppDelegate.m */; };
+		5E9B20D1197F023F00D893C5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E9B20D0197F023F00D893C5 /* Images.xcassets */; };
+		5E9B20D8197F023F00D893C5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9B20D7197F023F00D893C5 /* XCTest.framework */; };
+		5E9B20D9197F023F00D893C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9B20BE197F023F00D893C5 /* Foundation.framework */; };
+		5E9B20DA197F023F00D893C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9B20C2197F023F00D893C5 /* UIKit.framework */; };
+		5E9B20E2197F023F00D893C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E9B20E0197F023F00D893C5 /* InfoPlist.strings */; };
+		5E9B20E4197F023F00D893C5 /* RibbitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B20E3197F023F00D893C5 /* RibbitTests.m */; };
+		5E9B20EE197F026B00D893C5 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E9B20ED197F026B00D893C5 /* MainStoryboard.storyboard */; };
+		5E9B20F1197F099000D893C5 /* DRInboxTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B20F0197F099000D893C5 /* DRInboxTableViewController.m */; };
+		5E9B20F3197F0DBB00D893C5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9B20F2197F0DBB00D893C5 /* Parse.framework */; };
+		5E9B20F5197F0EB300D893C5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9B20F4197F0EB300D893C5 /* AudioToolbox.framework */; };
+		5E9B20F7197F0EBF00D893C5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9B20F6197F0EBF00D893C5 /* CFNetwork.framework */; };
+		5E9B20F9197F0ED600D893C5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9B20F8197F0ED600D893C5 /* CoreLocation.framework */; };
+		5E9B20FB197F0EE500D893C5 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9B20FA197F0EE500D893C5 /* libz.dylib */; };
+		5E9B20FD197F0EEF00D893C5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9B20FC197F0EEF00D893C5 /* MobileCoreServices.framework */; };
+		5E9B20FF197F0EF900D893C5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9B20FE197F0EF900D893C5 /* QuartzCore.framework */; };
+		5E9B2101197F0F0100D893C5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9B2100197F0F0100D893C5 /* Security.framework */; };
+		5E9B2103197F0F0A00D893C5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9B2102197F0F0A00D893C5 /* StoreKit.framework */; };
+		5E9B2105197F0F1400D893C5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9B2104197F0F1400D893C5 /* SystemConfiguration.framework */; };
+		5E9B211A197F130E00D893C5 /* DRSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B2119197F130D00D893C5 /* DRSignUpViewController.m */; };
+		5E9B211D197F178F00D893C5 /* DRLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B211C197F178F00D893C5 /* DRLoginViewController.m */; };
+		5E9B2120197F3FE100D893C5 /* DREditFriendsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B211F197F3FE100D893C5 /* DREditFriendsTableViewController.m */; };
+		5E9B2123197F45DD00D893C5 /* DRFriendsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B2122197F45DD00D893C5 /* DRFriendsTableViewController.m */; };
+		5E9B2192198206D000D893C5 /* DRCameraTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B2191198206D000D893C5 /* DRCameraTableViewController.m */; };
+		5E9B2195198223C800D893C5 /* DRImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B2194198223C800D893C5 /* DRImageViewController.m */; };
+		5E9B219719822B8500D893C5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9B219619822B8500D893C5 /* MediaPlayer.framework */; };
+		5E9B220A1989D2AB00D893C5 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B22091989D2AB00D893C5 /* TPKeyboardAvoidingScrollView.m */; };
+		5E9B22101989DF0400D893C5 /* MSCellAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B220D1989DF0400D893C5 /* MSCellAccessory.m */; };
+		5E9B22111989DF0400D893C5 /* UIView+AccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B220F1989DF0400D893C5 /* UIView+AccessViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E9B20DB197F023F00D893C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E9B20B3197F023F00D893C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E9B20BA197F023F00D893C5;
+			remoteInfo = Ribbit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5E26D90B198A127E00A2806B /* GravatarUrlBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GravatarUrlBuilder.h; sourceTree = "<group>"; };
+		5E26D90C198A127E00A2806B /* GravatarUrlBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GravatarUrlBuilder.m; sourceTree = "<group>"; };
+		5E9B20BB197F023F00D893C5 /* Ribbit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ribbit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E9B20BE197F023F00D893C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5E9B20C0197F023F00D893C5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5E9B20C2197F023F00D893C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5E9B20C6197F023F00D893C5 /* Ribbit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ribbit-Info.plist"; sourceTree = "<group>"; };
+		5E9B20C8197F023F00D893C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5E9B20CA197F023F00D893C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5E9B20CC197F023F00D893C5 /* Ribbit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ribbit-Prefix.pch"; sourceTree = "<group>"; };
+		5E9B20CD197F023F00D893C5 /* DRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DRAppDelegate.h; sourceTree = "<group>"; };
+		5E9B20CE197F023F00D893C5 /* DRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRAppDelegate.m; sourceTree = "<group>"; };
+		5E9B20D0197F023F00D893C5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5E9B20D6197F023F00D893C5 /* RibbitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RibbitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E9B20D7197F023F00D893C5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5E9B20DF197F023F00D893C5 /* RibbitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RibbitTests-Info.plist"; sourceTree = "<group>"; };
+		5E9B20E1197F023F00D893C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5E9B20E3197F023F00D893C5 /* RibbitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RibbitTests.m; sourceTree = "<group>"; };
+		5E9B20ED197F026B00D893C5 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = ../MainStoryboard.storyboard; sourceTree = "<group>"; };
+		5E9B20EF197F099000D893C5 /* DRInboxTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DRInboxTableViewController.h; path = ../DRInboxTableViewController.h; sourceTree = "<group>"; };
+		5E9B20F0197F099000D893C5 /* DRInboxTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRInboxTableViewController.m; path = ../DRInboxTableViewController.m; sourceTree = "<group>"; };
+		5E9B20F2197F0DBB00D893C5 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		5E9B20F4197F0EB300D893C5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5E9B20F6197F0EBF00D893C5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		5E9B20F8197F0ED600D893C5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5E9B20FA197F0EE500D893C5 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		5E9B20FC197F0EEF00D893C5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		5E9B20FE197F0EF900D893C5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5E9B2100197F0F0100D893C5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		5E9B2102197F0F0A00D893C5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		5E9B2104197F0F1400D893C5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5E9B2118197F130D00D893C5 /* DRSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DRSignUpViewController.h; path = ../DRSignUpViewController.h; sourceTree = "<group>"; };
+		5E9B2119197F130D00D893C5 /* DRSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRSignUpViewController.m; path = ../DRSignUpViewController.m; sourceTree = "<group>"; };
+		5E9B211B197F178F00D893C5 /* DRLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRLoginViewController.h; sourceTree = "<group>"; };
+		5E9B211C197F178F00D893C5 /* DRLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRLoginViewController.m; sourceTree = "<group>"; };
+		5E9B211E197F3FE100D893C5 /* DREditFriendsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DREditFriendsTableViewController.h; sourceTree = "<group>"; };
+		5E9B211F197F3FE100D893C5 /* DREditFriendsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DREditFriendsTableViewController.m; sourceTree = "<group>"; };
+		5E9B2121197F45DD00D893C5 /* DRFriendsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRFriendsTableViewController.h; sourceTree = "<group>"; };
+		5E9B2122197F45DD00D893C5 /* DRFriendsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRFriendsTableViewController.m; sourceTree = "<group>"; };
+		5E9B2190198206D000D893C5 /* DRCameraTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRCameraTableViewController.h; sourceTree = "<group>"; };
+		5E9B2191198206D000D893C5 /* DRCameraTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRCameraTableViewController.m; sourceTree = "<group>"; };
+		5E9B2193198223C800D893C5 /* DRImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRImageViewController.h; sourceTree = "<group>"; };
+		5E9B2194198223C800D893C5 /* DRImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRImageViewController.m; sourceTree = "<group>"; };
+		5E9B219619822B8500D893C5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		5E9B22081989D2AB00D893C5 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		5E9B22091989D2AB00D893C5 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		5E9B220C1989DF0400D893C5 /* MSCellAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCellAccessory.h; sourceTree = "<group>"; };
+		5E9B220D1989DF0400D893C5 /* MSCellAccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCellAccessory.m; sourceTree = "<group>"; };
+		5E9B220E1989DF0400D893C5 /* UIView+AccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AccessViewController.h"; sourceTree = "<group>"; };
+		5E9B220F1989DF0400D893C5 /* UIView+AccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AccessViewController.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E9B20B8197F023F00D893C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E9B219719822B8500D893C5 /* MediaPlayer.framework in Frameworks */,
+				5E9B2105197F0F1400D893C5 /* SystemConfiguration.framework in Frameworks */,
+				5E9B2103197F0F0A00D893C5 /* StoreKit.framework in Frameworks */,
+				5E9B2101197F0F0100D893C5 /* Security.framework in Frameworks */,
+				5E9B20FF197F0EF900D893C5 /* QuartzCore.framework in Frameworks */,
+				5E9B20FD197F0EEF00D893C5 /* MobileCoreServices.framework in Frameworks */,
+				5E9B20FB197F0EE500D893C5 /* libz.dylib in Frameworks */,
+				5E9B20F9197F0ED600D893C5 /* CoreLocation.framework in Frameworks */,
+				5E9B20C1197F023F00D893C5 /* CoreGraphics.framework in Frameworks */,
+				5E9B20F7197F0EBF00D893C5 /* CFNetwork.framework in Frameworks */,
+				5E9B20F5197F0EB300D893C5 /* AudioToolbox.framework in Frameworks */,
+				5E9B20C3197F023F00D893C5 /* UIKit.framework in Frameworks */,
+				5E9B20F3197F0DBB00D893C5 /* Parse.framework in Frameworks */,
+				5E9B20BF197F023F00D893C5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E9B20D3197F023F00D893C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E9B20D8197F023F00D893C5 /* XCTest.framework in Frameworks */,
+				5E9B20DA197F023F00D893C5 /* UIKit.framework in Frameworks */,
+				5E9B20D9197F023F00D893C5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E9B20B2197F023F00D893C5 = {
+			isa = PBXGroup;
+			children = (
+				5E9B20C4197F023F00D893C5 /* Ribbit */,
+				5E9B20DD197F023F00D893C5 /* RibbitTests */,
+				5E9B20BD197F023F00D893C5 /* Frameworks */,
+				5E9B20BC197F023F00D893C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E9B20BC197F023F00D893C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E9B20BB197F023F00D893C5 /* Ribbit.app */,
+				5E9B20D6197F023F00D893C5 /* RibbitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E9B20BD197F023F00D893C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E9B219619822B8500D893C5 /* MediaPlayer.framework */,
+				5E9B2104197F0F1400D893C5 /* SystemConfiguration.framework */,
+				5E9B2102197F0F0A00D893C5 /* StoreKit.framework */,
+				5E9B2100197F0F0100D893C5 /* Security.framework */,
+				5E9B20FE197F0EF900D893C5 /* QuartzCore.framework */,
+				5E9B20FC197F0EEF00D893C5 /* MobileCoreServices.framework */,
+				5E9B20FA197F0EE500D893C5 /* libz.dylib */,
+				5E9B20F8197F0ED600D893C5 /* CoreLocation.framework */,
+				5E9B20F6197F0EBF00D893C5 /* CFNetwork.framework */,
+				5E9B20F4197F0EB300D893C5 /* AudioToolbox.framework */,
+				5E9B20F2197F0DBB00D893C5 /* Parse.framework */,
+				5E9B20BE197F023F00D893C5 /* Foundation.framework */,
+				5E9B20C0197F023F00D893C5 /* CoreGraphics.framework */,
+				5E9B20C2197F023F00D893C5 /* UIKit.framework */,
+				5E9B20D7197F023F00D893C5 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E9B20C4197F023F00D893C5 /* Ribbit */ = {
+			isa = PBXGroup;
+			children = (
+				5E26D90B198A127E00A2806B /* GravatarUrlBuilder.h */,
+				5E26D90C198A127E00A2806B /* GravatarUrlBuilder.m */,
+				5E9B220B1989DF0400D893C5 /* MSCellAccessory */,
+				5E9B22081989D2AB00D893C5 /* TPKeyboardAvoidingScrollView.h */,
+				5E9B22091989D2AB00D893C5 /* TPKeyboardAvoidingScrollView.m */,
+				5E9B2118197F130D00D893C5 /* DRSignUpViewController.h */,
+				5E9B2119197F130D00D893C5 /* DRSignUpViewController.m */,
+				5E9B20ED197F026B00D893C5 /* MainStoryboard.storyboard */,
+				5E9B211E197F3FE100D893C5 /* DREditFriendsTableViewController.h */,
+				5E9B211F197F3FE100D893C5 /* DREditFriendsTableViewController.m */,
+				5E9B2121197F45DD00D893C5 /* DRFriendsTableViewController.h */,
+				5E9B2122197F45DD00D893C5 /* DRFriendsTableViewController.m */,
+				5E9B211B197F178F00D893C5 /* DRLoginViewController.h */,
+				5E9B211C197F178F00D893C5 /* DRLoginViewController.m */,
+				5E9B20EF197F099000D893C5 /* DRInboxTableViewController.h */,
+				5E9B20F0197F099000D893C5 /* DRInboxTableViewController.m */,
+				5E9B20CD197F023F00D893C5 /* DRAppDelegate.h */,
+				5E9B20CE197F023F00D893C5 /* DRAppDelegate.m */,
+				5E9B2190198206D000D893C5 /* DRCameraTableViewController.h */,
+				5E9B2191198206D000D893C5 /* DRCameraTableViewController.m */,
+				5E9B20D0197F023F00D893C5 /* Images.xcassets */,
+				5E9B20C5197F023F00D893C5 /* Supporting Files */,
+				5E9B2193198223C800D893C5 /* DRImageViewController.h */,
+				5E9B2194198223C800D893C5 /* DRImageViewController.m */,
+			);
+			path = Ribbit;
+			sourceTree = "<group>";
+		};
+		5E9B20C5197F023F00D893C5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E9B20C6197F023F00D893C5 /* Ribbit-Info.plist */,
+				5E9B20C7197F023F00D893C5 /* InfoPlist.strings */,
+				5E9B20CA197F023F00D893C5 /* main.m */,
+				5E9B20CC197F023F00D893C5 /* Ribbit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E9B20DD197F023F00D893C5 /* RibbitTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E9B20E3197F023F00D893C5 /* RibbitTests.m */,
+				5E9B20DE197F023F00D893C5 /* Supporting Files */,
+			);
+			path = RibbitTests;
+			sourceTree = "<group>";
+		};
+		5E9B20DE197F023F00D893C5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E9B20DF197F023F00D893C5 /* RibbitTests-Info.plist */,
+				5E9B20E0197F023F00D893C5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E9B220B1989DF0400D893C5 /* MSCellAccessory */ = {
+			isa = PBXGroup;
+			children = (
+				5E9B220C1989DF0400D893C5 /* MSCellAccessory.h */,
+				5E9B220D1989DF0400D893C5 /* MSCellAccessory.m */,
+				5E9B220E1989DF0400D893C5 /* UIView+AccessViewController.h */,
+				5E9B220F1989DF0400D893C5 /* UIView+AccessViewController.m */,
+			);
+			path = MSCellAccessory;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E9B20BA197F023F00D893C5 /* Ribbit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E9B20E7197F023F00D893C5 /* Build configuration list for PBXNativeTarget "Ribbit" */;
+			buildPhases = (
+				5E9B20B7197F023F00D893C5 /* Sources */,
+				5E9B20B8197F023F00D893C5 /* Frameworks */,
+				5E9B20B9197F023F00D893C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ribbit;
+			productName = Ribbit;
+			productReference = 5E9B20BB197F023F00D893C5 /* Ribbit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5E9B20D5197F023F00D893C5 /* RibbitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E9B20EA197F023F00D893C5 /* Build configuration list for PBXNativeTarget "RibbitTests" */;
+			buildPhases = (
+				5E9B20D2197F023F00D893C5 /* Sources */,
+				5E9B20D3197F023F00D893C5 /* Frameworks */,
+				5E9B20D4197F023F00D893C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E9B20DC197F023F00D893C5 /* PBXTargetDependency */,
+			);
+			name = RibbitTests;
+			productName = RibbitTests;
+			productReference = 5E9B20D6197F023F00D893C5 /* RibbitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E9B20B3197F023F00D893C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DR;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = example;
+				TargetAttributes = {
+					5E9B20D5197F023F00D893C5 = {
+						TestTargetID = 5E9B20BA197F023F00D893C5;
+					};
+				};
+			};
+			buildConfigurationList = 5E9B20B6197F023F00D893C5 /* Build configuration list for PBXProject "Ribbit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5E9B20B2197F023F00D893C5;
+			productRefGroup = 5E9B20BC197F023F00D893C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E9B20BA197F023F00D893C5 /* Ribbit */,
+				5E9B20D5197F023F00D893C5 /* RibbitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E9B20B9197F023F00D893C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E9B20EE197F026B00D893C5 /* MainStoryboard.storyboard in Resources */,
+				5E9B20C9197F023F00D893C5 /* InfoPlist.strings in Resources */,
+				5E9B20D1197F023F00D893C5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E9B20D4197F023F00D893C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E9B20E2197F023F00D893C5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E9B20B7197F023F00D893C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E9B20CF197F023F00D893C5 /* DRAppDelegate.m in Sources */,
+				5E9B220A1989D2AB00D893C5 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				5E9B211D197F178F00D893C5 /* DRLoginViewController.m in Sources */,
+				5E9B20CB197F023F00D893C5 /* main.m in Sources */,
+				5E26D90D198A127E00A2806B /* GravatarUrlBuilder.m in Sources */,
+				5E9B2123197F45DD00D893C5 /* DRFriendsTableViewController.m in Sources */,
+				5E9B2120197F3FE100D893C5 /* DREditFriendsTableViewController.m in Sources */,
+				5E9B22101989DF0400D893C5 /* MSCellAccessory.m in Sources */,
+				5E9B211A197F130E00D893C5 /* DRSignUpViewController.m in Sources */,
+				5E9B2192198206D000D893C5 /* DRCameraTableViewController.m in Sources */,
+				5E9B22111989DF0400D893C5 /* UIView+AccessViewController.m in Sources */,
+				5E9B2195198223C800D893C5 /* DRImageViewController.m in Sources */,
+				5E9B20F1197F099000D893C5 /* DRInboxTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E9B20D2197F023F00D893C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E9B20E4197F023F00D893C5 /* RibbitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E9B20DC197F023F00D893C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E9B20BA197F023F00D893C5 /* Ribbit */;
+			targetProxy = 5E9B20DB197F023F00D893C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5E9B20C7197F023F00D893C5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E9B20C8197F023F00D893C5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5E9B20E0197F023F00D893C5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E9B20E1197F023F00D893C5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E9B20E5197F023F00D893C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5E9B20E6197F023F00D893C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E9B20E8197F023F00D893C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ribbit/Ribbit-Prefix.pch";
+				INFOPLIST_FILE = "Ribbit/Ribbit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5E9B20E9197F023F00D893C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ribbit/Ribbit-Prefix.pch";
+				INFOPLIST_FILE = "Ribbit/Ribbit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5E9B20EB197F023F00D893C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Ribbit.app/Ribbit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ribbit/Ribbit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RibbitTests/RibbitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5E9B20EC197F023F00D893C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Ribbit.app/Ribbit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ribbit/Ribbit-Prefix.pch";
+				INFOPLIST_FILE = "RibbitTests/RibbitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E9B20B6197F023F00D893C5 /* Build configuration list for PBXProject "Ribbit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E9B20E5197F023F00D893C5 /* Debug */,
+				5E9B20E6197F023F00D893C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E9B20E7197F023F00D893C5 /* Build configuration list for PBXNativeTarget "Ribbit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E9B20E8197F023F00D893C5 /* Debug */,
+				5E9B20E9197F023F00D893C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E9B20EA197F023F00D893C5 /* Build configuration list for PBXNativeTarget "RibbitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E9B20EB197F023F00D893C5 /* Debug */,
+				5E9B20EC197F023F00D893C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E9B20B3197F023F00D893C5 /* Project object */;
+}
